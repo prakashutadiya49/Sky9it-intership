@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input, button{
+    font: inherit;
+    margin-top: 10px;
+}
+p{
+    margin: 10px;
+}
+#first{
+    text-decoration: line-through red;
+    text-transform: uppercase;
+    text-align: end;
+    font-weight: bolder;
+}
+#second{
+    text-decoration: overline green;
+    text-transform: lowercase;
+    text-align: right;
+    letter-spacing: 1em;
+    font-style: italic;
+    font-family: monospace;
+}
+#third{
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: justify;
+    text-indent:10em;
+    line-height: 1.6em;
+    word-spacing: 1em;
+    font-style: oblique;
+    font-family: fantasy;
+}
+

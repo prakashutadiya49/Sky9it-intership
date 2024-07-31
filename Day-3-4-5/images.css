@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profie{
+    width: 25%;
+}
+
+.hero{
+    border-bottom: 2px black solid;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: gold;
+}
+h1{
+    font-size: 400%;
+    white-space: wrap;
+}
+.profie img{
+    width: 100%;
+    min-width: 150px;
+    height: auto;
+    margin: 1rem;
+    border: 5px double gray;
+    
+    border-radius: 50%;
+}
+
+section{
+    background-image: url(xyz.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+p{
+    font-size: 800%;
+    text-align: center;
+    font-weight: 800;
+    color: hsla(0, 100%, 99%, 0.237);
+    background-clip: text;
+
+}

@@ -1,0 +1,134 @@
+/* cntrol+f for serch anything in css file */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --BLUECOLOR:blue;
+}
+body{
+    min-height: 100vh;
+    background-color: aliceblue;
+    background-image: linear-gradient(green,black);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+}
+nav{
+    display: flex;
+    text-decoration: none;
+    background-color:white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border: 1px dotted var(--BLUECOLOR);
+    margin: 1rem 0 ;
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 0.2rem;
+}
+header,footer{
+    display: grid;
+    position: sticky;
+    text-align: center;
+    background-color: var(--BLUECOLOR);
+    width: 100%;
+}
+header{
+    top: 0;
+}
+footer{
+    bottom: 0;
+}
+main{
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.nowrap{
+    white-space: nowrap;
+}
+
+.card{
+    display: flex;
+    max-height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    color: black;
+    padding: 2rem;
+    align-items: center;
+    align-content: space-around;
+    margin: 0rem 1rem 1rem 1rem
+
+}
+figure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen  and (min-width:576px){
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+}
+.card img[alt]{
+    border: 10px solid red;
+}
+.card img:not([alt]){
+    border: 10px solid green;
+}
+
+.card:target{
+    border: 3px solid purple;
+}
+
+figcaption::first-letter{
+    text-transform: capitalize;
+}
+
+.card:nth-child(2){
+    background-color: rgb(226, 211, 128)
+}
+.card:nth-child(odd){
+    background-color: aqua;
+}
+
+.card figcaption::after{
+    content:'Rajkot';
+    display: flex; 
+    justify-content: center;
+}
+
+/* .card figcaption::first-line{
+    font-size: 3rem;
+} */
+.card figcaption::first-letter{
+    font-size: 3rem;
+}

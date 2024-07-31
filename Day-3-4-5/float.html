@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float properties</title>
+    <style>
+        .float{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            float: left;
+            margin: 20px;
+        }
+        .float:hover{
+            visibility: hidden;
+        }
+        .float2{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            float: right;
+            margin: 20px;
+        }
+        .clear{
+            clear: both;
+        }
+        .container{
+            margin: 10px;
+            background-color: bisque;
+            display: flow-root;
+            /* overflow: auto; */
+        }
+        .belowcontainer{
+            margin: 10px;
+            background-color: rgb(223, 137, 31);
+        }
+        p{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="float"></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum delectus laboriosam ad accusamus facilis numquam ipsa magni nostrum. Aut saepe omnis veritatis, rerum dolore vero. Consequuntur, vel. Doloribus, obcaecati?</p>
+    </div>
+    <!-- <div class="clear"></div> -->
+    <p>Ipsam suscipit veniam itaque incidunt earum ab ipsum? Doloribus vel corporis a alias neque fugiat omnis dolores non numquam id distinctio blanditiis libero, voluptatibus hic? At voluptas magnam excepturi sequi.</p>
+    <p>Beatae laboriosam ipsa quaerat vel recusandae rem esse provident? Vel aliquid dolore, quos eaque nulla assumenda perferendis laudantium delectus earum. Accusantium nesciunt quaerat vel harum tempora possimus doloremque ut earum.</p>
+    <div class="belowcontainer">
+        <div class="float2"></div>
+        <p>Saepe distinctio maxime cum, neque eveniet molestiae at quos mollitia aspernatur. Quisquam expedita sapiente aperiam sint earum quaerat, ipsum optio sit, veritatis doloribus aliquam suscipit ut laborum dolorum libero delectus.</p>
+    </div>
+    <div class="clear"></div>
+    <p>Excepturi recusandae sint consequuntur tempore aliquid ipsum adipisci autem, minima repellendus repellat, nobis quam quisquam at! Modi fugiat minus quisquam autem quia est alias veritatis incidunt beatae, dolorem, soluta porro?</p>
+</body>
+</html>

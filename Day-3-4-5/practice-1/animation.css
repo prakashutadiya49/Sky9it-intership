@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px dotted black;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border:2px dotted red;
+    margin: 20px;
+}
+.box:first-child{
+    background-color: aqua;
+    /* transform:translatey(100%); */
+    /* transform: rotate(45deg); */
+    /* transform: scale(120%); */
+    animation: roter 3s ease-in-out infinite  ;
+    
+}
+.box:nth-child(2){
+    /* transform: translate(50%); */
+    /* transform: skewY(-50deg); */
+    /* transform: skewx(-50deg); */
+    transform: skew(-50deg);
+    background-color: aliceblue;
+}
+.box:nth-child(2):hover{
+    transform: rotate(-45deg);
+    background-color:rgb(33, 107, 107);
+    font-size: 6rem;
+    transition-delay:2s;
+    transition-property:transform font-size;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+}
+.box:last-child{
+    transform: rotate(-45deg);
+    background-color: aqua;
+}
+
+.box:last-child:hover{
+    transform: rotate(45deg);
+    background-color:rgb(33, 107, 107);
+    font-size: 6rem;
+    transition-delay:0.2s;
+    transition-property:transform font-size;
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
+}
+.box:last-child{
+    animation: slide 5s ease-in infinite 1s ;
+    animation-direction:reverse;
+    animation-fill-mode: both;
+}
+
+@keyframes slide{
+    0% {
+        transform: rotate(xdeg);
+    }
+    33%{
+        transform: translateX(600px) rotate(180deg);
+    }
+    66%{
+        transform: translateX(-600px) rotate(-180deg);
+    }
+    100%{
+        transform: translateY(0);
+        background-color: aliceblue;
+    }
+}
+
+@keyframes roter{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(60deg);
+        background-color: rgb(96, 111, 111);
+    }
+    40%{
+        transform: rotate(120deg);
+        background-color: rgb(118, 41, 194);
+    }
+    60%{
+        transform: rotate(180deg);
+        background-color: rgb(219, 17, 17);
+    }
+    80%{
+        transform: rotate(240deg);
+        background-color: rgb(218, 47, 184);
+    }
+    100%{
+        transform: rotate(360deg);
+        background-color: aqua;
+    }
+}

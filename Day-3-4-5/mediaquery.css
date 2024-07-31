@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    background-image: linear-gradient(blue,white);
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header,footer,main,nav{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+header,footer{
+    position: sticky;
+    font-size: 2rem;
+    background-color: rgb(53, 67, 148);
+    color: whitesmoke;
+    font-weight: 800;
+}
+
+header{
+    top:0;
+}
+nav{
+    background-color: rgb(97, 97, 161);
+}
+main{
+    flex-grow: 1;
+    color: aliceblue;
+    font-size: 3rem;
+    font-weight: 800;
+}
+footer{
+    bottom: 0;
+}
+
+
+/* small */
+@media screen and (min-width:576px){ 
+    body{
+        background-color: green;
+        background-image: radial-gradient(green,whitesmoke);
+    }
+    nav{
+        display: none;
+    }
+}
+/* mediam */
+@media screen and (min-width:768px){ 
+    body{
+        background-color: gold;
+        background-image: radial-gradient(gold,whitesmoke);
+    }
+    nav{
+        display: block;
+    }
+}
+
+/* large */
+@media screen and (min-width:992px){ 
+    body{
+        background-color: pink;
+        background-image: radial-gradient(pink,whitesmoke);
+    }
+}
+/* xl */
+@media screen and (min-width:1200px){ 
+    body{
+        background-color: purple;
+        background-image: radial-gradient(purple,whitesmoke);
+    }
+}
+
+/* mobile devices lendscape */
+@media screen and (min-height:425px) and (min-aspect-ratio:7/4){ 
+    body{
+        background-color: firebrick;
+        background-image: radial-gradient(firebrick,whitesmoke);
+    }
+    nav{
+        display: none;
+    }
+}

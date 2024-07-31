@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- it is a data about data. 
+    meta tages for search engine optimization,this tags not affect content of webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,css,java,javascript,react">
+    <meta name="description" content="description about web page for search engine optimization">
+    <!-- give info. about last visited and auther -->
+    <meta name="author" content="prakash utadiya">
+    <meta name="visited" content="sky9it,10/1/2023">  
+    <!-- page is refresj=h after every 3 seconds -->
+    <meta http-equiv="refresh" content="500">
+    <title>Day 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body link="red" alink="blue" vlink="yellow" >
+
+    <!-- this tag are show importance of the text and browser load website based on this tag. -->
+    <h1>this is h1</h1>
+    <h2>this is h2</h2>
+    <h3>this is h3</h3>
+    <h4>this is h4</h4>
+    <h5>this is h5</h5>
+    <h6>this is h6</h6>
+
+    <!-- this are the styling tags -->
+    <p>my name <b>prakash</b></p>
+    <p>my name <strong>prakash</strong></p>
+    <p>my name <bolder>prakash</bolder></p>
+    <p>my name <u>prakash</u></p>
+    <p>my name <i>prakash</i></p>
+
+
+    <!-- abrivation tag -->
+    <!-- used to show text which has spacial meaning and show diff from other -->
+    
+    <p>my name <mark title="my name">prakash</mark></p>
+    <p>my name <abbr title="my name">prakash</abbr></p>
+
+    <!-- strike and del work same-->
+    <p>my name <strike>prakash</strike></p>
+    <p>my name <del>prakash</del></p>
+
+    <!-- pharse tags used to provide meaning of the tag -->
+
+    <p>company name: <em title="located in ayodhiya chock">sky9it craft private limited</em></p>
+
+    <!-- font tag -->
+    <font face="arial" color="red" size="7">my name is prakash</font><br>
+
+    <!-- code tag use to write code in html page -->
+
+    <code>
+        for(let i=0;i<10;i++){<br>
+            console.log("javascript");
+            <br>
+        }
+    </code>
+
+    <!-- address tag used to shpw address -->
+    <address>
+        Arjun socity<br>
+        behind new collage<br>
+        upleta-360490<br>
+        rajkot-india
+    </address>
+
+    <p>my name is <q>prakash</q></p>
+
+
+    <!--1.comments in html used to make code more readable and undersandable for us as well as other person.
+    2.used to hide content and help to find error-->
+
+    <!-- img element in html is inline by defult -->
+
+    <h1>HTML-images</h1>
+
+    <img src="7.png" alt="7 img" height="200px" width="100px" style="margin: 10pxs;">
+    <img src="8.png" alt="7 img" height="200px" width="100px" style="margin: 10pxs;">
+    <img src="9.png" alt="7 img" height="200px" width="100px" style="margin: 10pxs;">
+
+    <!-- tables in html -->
+    <!--table is responsible for allocate space.th for header. td for data. caption for title. -->
+    <h1>HTML-tables</h1>
+    <table bgcolor="skyblue" border="1" bordercolor="gray" align="center" style="text-align: center;
+    width: 200px;"> 
+        <caption>
+            Krishna Flowers
+        </caption>
+        <tr bgcolor="white">
+            <th>No.</th>
+            <th>Flower Name</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>rose</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>lily</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>jasmine</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>sunflower</td>
+            <td>400</td>
+        </tr>
+        <tr bgcolor="white">
+            <td colspan="2">PAYABLE AMOUNT</td>
+            <td>1000 </td>
+        </tr>
+    </table>
+
+    <!-- nested order lists
+    1.ordered list
+    2.unorder list
+    3.discription list -->
+    <h1>HTML-Lists</h1>
+    <ol type="1">
+        <li>programing Languages
+            <ol start="1">
+                <li>python</li>
+                <li>java</li>
+                <li>php</li>
+                <li>c++</li>
+                <li>c</li>
+            </ol>
+        </li>
+        <li>
+            DSA
+            <ol start="6">
+                <li>array</li>
+                <li>arraylist</li>
+                <li>stack</li>
+                <li>quque</li>
+                <li>tree</li>
+            </ol>
+        </li>
+        <li>
+            Web Technologies
+            <ol start="I" type="I">
+                <li>
+                    <dl>
+                    <dt>HTML</dt>
+                    <dd>Hyper Text Markap Language</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheet</dd>
+                    </dl>
+                </li>
+                <li>JS
+                    <ul type="sqaure">
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>View</li>
+                    </ul>
+                </li>
+                <li>Bootstrap</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- text Link-it is a object that allow as to move diff page or a diff section or part in same page -->
+    <!--two type of path:
+    1.absolute(https://www.google.com)
+    2.relative -->
+
+<h1>HTML-simple links </h1>
+<a href="https://www.google.com" target="_blank"> google</a>
+<br>
+<a href="main.js" target="_self">go to javascript file</a>
+
+<h1>HTML-image links</h1>
+<a href="https://www.google.com"><img src="7.png" alt="random img" height="100px "></a>
+
+<h1>HTML-email links</h1>
+<a href="mailto:prakashutadiya@gmail.com">Go To Mail Account</a>
+
+
+<!-- frames areused to divide web page in to diff frames and individual frame work as single web page or html file.now day not used.
+iframe-used to show another or secondey web page in primary window. -->
+
+<h1>HTML-iframes</h1>
+<iframe src="https://www.youtube.com/embed/_Mz69752y_8?si=S-euNAcgKb1IYlBv" title="YouTube video player"frameborder="0" height="300px" width="500px"></iframe>
+
+<!-- block-inline-inlineblock element -->
+ <h1>block-inline-inlineblock element</h1>
+<div style="background-color: brown; height: 50px;"></div>
+<br>
+<span style="background-color: skyblue;">Prakash utadiya</span>
+
+<!-- rgba,rgb,hexcode,colorname -->
+<h1>HTML colors-Fonts</h1>
+<ul>
+    <li style="color: #00ffff; font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">item 1</li>
+    <li style="color: red; font-size: 20px; font-family: 'Times New Roman', Times, serif;">item 2</li>
+    <li style="color: black; font-size: 35px; font-family: cursive;">item 3</li>
+</ul>
+
+<!-- HTML forms -->
+
+<h1>HTML forms</h1>
+
+<a href="loginpage.html">Login Page</a>
+
+<!-- HTML-Embeded multimedia -->
+<!-- embed tag used to show video in webpage.this tag not provide any other attributes.now aday we used video ans audio tags. -->
+<!-- audio and video elements are inline elements -->
+<embed src="" type=""></embed>
+<video src="" controls muted autoplay></video>
+<audio src="" controls muted autoplay></audio>
+
+<!-- opening and closing tags are symatric tags -->
+<h1>HTML-symatric tags</h1>
+<Header>Header</Header>
+<nav>Nevigation</nav>
+<main>Main content</main>
+<footer>Footer</footer>
+
+<h1>CSS</h1>
+<p>inline-embeded-external</p>
+
+<script src="main.js" type="text/javascript"></script>
+</body>
+</html>

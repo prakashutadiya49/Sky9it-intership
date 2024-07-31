@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+    gap: 2rem;
+}
+
+a{
+    font-size: 4rem;
+    color: whitesmoke;
+    text-decoration: none;
+    border: 2px dotted firebrick;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+a:is(a:hover,a:focus){
+    color: purple;
+}
+:where(a:active){
+    color:green;
+}
+/* any-link=link+visited */
+/* a:any-link{
+    color: burlywood;
+} */
+a:visited{
+    color: red;
+}
+a:link{
+    color: aqua;
+}
+
+a:target{
+    border: 2px dotted greenyellow;
+}

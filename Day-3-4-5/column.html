@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>columns-properties</title>
+    <style>
+        section{
+            /* column-count: 4;
+            column-width: 250px; */
+            columns: 4 250px;
+            column-gap: 3rem;
+            /* divider between columns */
+            column-rule:3px solid black ; 
+        }
+        section p{
+            margin-top: 0;
+            font-size: 2rem;
+            font-weight: bold;
+
+        }
+        section h2{
+            background-color: bisque;
+            padding: 3rem;
+            margin-top: 0;
+            break-inside: avoid;
+            /* break-before: column; */
+        }
+        .name{
+            font-size: 3rem;
+            color: aquamarine;
+            margin-top: 0;
+            column-span: all;
+            text-align: center;
+        }
+        .nowrap{
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <section>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, sequi tempora expedita quos eaque repudiandae nobis beatae dolorem accusantium quibusdam provident ad quidem hic laboriosam quod exercitationem a? Consequuntur, laboriosam.</p>
+
+        <p>Necessitatibus esse dicta accusamus in atque voluptas unde, fugiat quo quis totam minus deleniti nulla ullam mollitia cumque iusto, incidunt nemo nisi natus labore suscipit. Aliquam, veniam? Quasi, corporis consequatur?</p>
+        <!-- <h2>Next Topic</h2> -->
+        
+        <p class="name">my name is &#8220 prakash utadiya &#8221 <span class="nowrap">
+            &#8212 Rajkot</span></p>
+
+        <p>Suscipit quaerat voluptatum nostrum dolores provident odio repellendus officia alias. Eius, commodi quos consectetur labore, facilis error iure dolores odio accusamus ullam placeat voluptates numquam quia. Saepe accusantium tempore esse!</p>
+
+        <p>Dolores corrupti aut alias, sunt deserunt debitis et excepturi quis, qui nostrum nobis, inventore consequuntur totam repellendus quas ea itaque repellat illo nisi! Nemo odit fugiat, quidem quo deleniti necessitatibus?</p>
+
+    </section>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus sequi, repellat ducimus quia dignissimos illo. Omnis, provident? Perferendis rerum, atque mollitia, vero voluptatum porro numquam nobis quos sunt quisquam ipsa!</p>
+</body>
+</html>

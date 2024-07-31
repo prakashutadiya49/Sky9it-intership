@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    color: black;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#name{
+    font-size: 24px;
+    border: 2px dotted black;
+    padding: 1em;
+    margin: 1em;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    margin: 3em auto;
+    background-color: gray;
+    border: 5px dotted black;
+    outline: 2px solid purple;
+    outline-offset: 10px;
+    border-radius: 50%;
+}

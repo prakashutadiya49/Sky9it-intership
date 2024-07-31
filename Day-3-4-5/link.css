@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+}
+/* pudo class represent current state of elenent
+psudo element represent part of a element */
+/* less spacificity compare to below */
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+/* all below have same spacificity */
+a:visited{
+    color: red;
+
+}
+a:focus{
+    color: green;
+}
+a:hover{
+    border: 1px solid black;
+}
+a:active{
+    color: chocolate;
+}

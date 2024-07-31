@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+.container{
+    width: max-content;
+    display: grid;
+    border: 2px solid red;
+    padding: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
+    height: 500px;
+    /* grid-template-columns: 20% 40% 40%; */
+    /* grid-template-columns: repeat(2,1fr 2fr); */
+    /* used to give width to columns */
+    grid-template-columns:100px 200px;
+    /* grid-template-rows: 100px; */
+    /* jinko height nahi muli unko 150 px height mill jayegi */
+    /* grid-auto-rows: 150px; */
+    justify-content: center;
+    /* vertically align items by defult properties are strech entire grid move*/
+    /* align-content: space-around; */
+    /* in align items individual item are move and by defult value is strech*/
+    /* align-items:center; */
+}
+.box{
+    font-size: 1rem;
+    padding: 1rem;
+    color: aliceblue;
+    background-color: black;
+    border: 5px solid orange;
+}
+.box:nth-child(2){
+    background-color: skyblue;
+    color: black;
+    /* horizontaly align individual items */
+    justify-self: center;
+}
+.box:nth-child(4){
+    background-color: blue;
+    color: black;
+    align-self: center;
+    justify-self: center;
+}
+
+.containerbelow{
+    border: 3px dotted greenyellow;
+    margin-top: 50px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    gap: 10px;
+    height: 400px;
+    width: max-content;
+}
+.boxbelow{
+    background-color: green;
+    border: 2px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+.boxbelow:first-child{
+    /* grid-row-start:1;
+    grid-row-end: 4; */
+    /* short way */
+    grid-row: 1/4;
+    /* grid-area is a short way to grid-column and grid-row
+    grid-area:row-start/col-start/row-end/col-end */
+}
+.boxbelow:nth-child(2){
+    grid-column-start:2;
+    grid-column-end: 4;
+}
+.boxbelow:nth-child(6){
+    /* grid-row: 2 / 4;
+    grid-column: 4 / 5; */
+    grid-area: 2/4/4/5;
+}
+.boxbelow:nth-child(3),.boxbelow:nth-child(5),.boxbelow:nth-child(7){
+    background-color: red;
+}
+.boxbelow:nth-child(4),
+.boxbelow:nth-child(8){
+    background-color: orange;
+}
+

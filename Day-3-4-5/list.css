@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-size: 2rem;
+    padding: 5% 10%;
+    /* font-family: fantasy; */
+}
+h2{
+    margin: 50px 0px 0px 0px;
+    color: red;
+    text-decoration: underline;
+    text-transform: uppercase;
+    list-style-position: inside;
+}
+ol{
+    list-style-type:lower-alpha;
+    text-align: center;
+    /* list-style: none; */
+    color: blueviolet;
+    list-style-position: inside ;
+    /* list-style-image: url(..//); */
+    line-height: 25px;
+
+}
+ul li{
+    list-style-image: url('https://i.imgur.com/6Q5Q7.png');
+    list-style: square url('https://i.imgur.com/6Q5Q7.png');
+    list-style-position: inside ;
+}
+ul li:nth-child(2){
+    color: red;
+}
+ul li:nth-child(odd){
+    color: blue;
+}
+
+ul li::marker{
+    color: black;
+    font-size: 2em;
+    content:"${i}>>";
+}
